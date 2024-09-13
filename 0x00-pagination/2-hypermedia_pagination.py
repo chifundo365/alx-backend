@@ -31,7 +31,6 @@ class Server:
         ''' Returns a page of results given the number and size '''
         self.dataset()
         assert (isinstance(page, int) and isinstance(page_size, int))
-        print(f'page:{page} => page_size:{page_size}')
         assert page > 0 and page_size > 0
 
         idxs = index_range(page, page_size)
