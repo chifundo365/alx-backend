@@ -14,8 +14,7 @@ class LRUCache(BaseCaching):
         self.used_keys = []
 
     def put(self, key, item):
-        """
-        Add an item in the cache
+        """Add an item in the cache
         if the number of items is higher:
             discards the least recently used item
         """
