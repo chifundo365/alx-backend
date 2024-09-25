@@ -18,10 +18,8 @@ def get_locale():
 @app.route("/")
 def index():
     """ index view """
-    print(get_locale())
     return render_template("2-index.html")
 
 
 if __name__ == "__main__":
     app.run(port='5000')
-
