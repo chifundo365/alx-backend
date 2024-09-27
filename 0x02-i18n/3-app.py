@@ -16,7 +16,7 @@ def get_locale():
     return request.accept_languages.best_match(app.config["LANGUAGES"])
 
 
-@app.route("/")
+@app.route("/", strict_slashes=False)
 def index():
     """ index view """
     home_title = _("Welcome to Holberton")
